@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: purple;
+            color:black;
+            font-weight:bold;
+            text-align: center;
+        }
+        /* div li p{
+            color:blue;
+            font-weight:bold;
+            background-color: violet;
+        } */
+
+        /* div p{
+            color:blue;
+            font-weight:bold;
+            background-color: violet;
+        } */
+
+
+/* To add effects on elements directly under parent element we use > sign. It appies effect to the elements directly under its parent element */
+        /* div>p{
+            color:burlywood;
+            background-color:aquamarine;
+
+        } */
+
+
+/* + sign is used when style is used with reference to its previous element or sibling. i.e the style is only applied to the p whose previous sibling or element is div*/
+        div+p{
+            background-color: brown;
+            color:white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is about selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li><p>This is a paragraph inside list</p></li>
+                    <li>This is second statement inide li</li>
+                    <P>This is paragraph inside ul  </P>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outer paragraph</p>
+</body>
+</html>

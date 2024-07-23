@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations and keyframes</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        background-color: yellowgreen;
+
+    }
+
+    .box {
+
+        background-color: green;
+        width: 250px;
+        height: 250px;
+        position: relative;
+        animation-name: anime1;
+        animation-name: anime2;
+        /* It is the name of the animation. Any name can be given */
+
+        animation-duration: 2s;
+        /* It is the time period  of animation i.e time taken for a single iteration */
+
+        animation-iteration-count: 2;
+        /* It is the number of repeatition of the animation */
+        /* animation-iteration-count: infinite; */
+
+
+        /* animation-fill-mode: forwards; */
+        /* Forwards maintains the final specified width even after the animation duration */
+
+        /* animation-fill-mode:alternate; */
+        /* alternate brings the width in its initial set width or original width*/
+
+        /* animation-timing-function: ease-in; */
+        /* timing-function:ease in slows the animation at the start */
+
+        /* animation-timing-function: ease-out; */
+        /* ease-out slows the animation at the end */
+
+        /* animation-timing-function: ease-in-out; */
+        /* ease-in-out slows the animation at the start and the end */
+
+        /* animation-delay: 2s; */
+        /* animation-delay: starts the animation after the specified time or it delays the animation for the specified time */
+
+        /* animation-direction:reverse; */
+        /* It reverses the direction of the animation */
+
+        /* animation-direction:alternate; */
+        /* It maintains the animation continuous i.e the width increases from set condition to specified value then the width decreases from its final value to the initial set value then again it increases and so on. In default case the width inceases then again it begins from the start and starts increasing again. */
+
+        /* animation-direction: alternate-reverse; */
+        /* It is same as alternate but the direction of the animation is revesed */
+
+
+        /* This is the shorthand for animation  */
+        animation: animation-name animation-duration animation-timing-function animation-delay animation-iteraation-count animation-fill-mode;
+        animation: anime2 2s ease-in 3s 3 forwards;
+
+
+    }
+
+    /* There are teo ways of using animation keyframes */
+
+    /* This is first method */
+    /* Here from specifies the start position of the animation and to specifies the end position of the animation */
+    @keyframes anime1 {
+        from {
+            width: 50px;
+
+        }
+
+        to {
+            width: 800px;
+
+        }
+    }
+
+    /* This is second method */
+    /* Here the % sepcifies the %time i.e 25% means 25% of the animation-duration  */
+    @keyframes anime2 {
+        0% {
+            top: 0px;
+            left: 0px;
+
+        }
+
+        25% {
+            top: 0px;
+            left: 250px;
+
+        }
+
+        50% {
+
+            top: 250px;
+            left: 250px;
+        }
+
+        75% {
+            top: 250px;
+            left: 0px;
+
+        }
+
+        100% {
+            top: 0px;
+            left: 0px;
+
+        }
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box.
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color {
+            background-color: rgb(1 23 37);
+        }
+
+        .nav1 {
+            background-color: black;
+            /* width: 1000px; */
+            border-radius: 10px;
+            /* margin:auto; */
+        }
+
+        .nav1 ul {
+            overflow: auto;
+        }
+
+        .nav1 li a {
+            color: white;
+            text-decoration: none;
+            padding: 7px 30px;
+            margin: 7px 30px;
+        }
+
+        .nav1 li a:visited {
+            color: bisque;
+        }
+
+        .nav1 li a:hover {
+            background-color: darkgrey;
+        }
+
+        .nav1 li a:active {
+            color: black;
+        }
+
+        .nav1 li {
+            /* When float is used the element floats from the parent tag i.e the ul(li) tag overflows from the nav tag so color of nav is not seen on the li */
+            float: left;
+            list-style: none;
+            padding: 10px 7px;
+            margin: 4px 4px;
+            padding-top: 11px;
+
+        }
+
+        .nav1 input {
+            float: right;
+            margin: 9px 40px;
+            padding: 3px;
+            width: 200px;
+            /* text-align: center; */
+            border: 2px solid grey;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body class="color">
+    <header>
+        <nav class="nav1">
+            <ul>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Links</a></li>
+                <li><a href="#">About</a></li>
+                <input type="text" placeholder="Search">
+            </ul>
+        </nav>
+    </header>
+
+</body>
+
+</html>

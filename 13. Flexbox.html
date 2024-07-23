@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+      .container{
+        height:544px;
+        width:100%;
+        border:2px solid black;
+        /* Initialize the container as flexbox using display:flex */
+        display: flex;
+
+        /* FLEX PROPERTIES FOR FLEX CONTAINER */
+
+        /* flex-direction: row; */
+        /* row is s default position of a flex */
+
+        /* flex-direction: row-reverse; */
+        /* flex-direction:row-reverse fills the elements from right in a row  */
+
+        /* flex-direction: column; */
+        /* It moves the elements in a column */
+
+        /* flex-direction: column-reverse; */
+        /* flex-direction: column-reverse; fills the elements from bottom  */
+
+        /* flex-wrap:wrap; */
+        /* It adjusts the layout if the screen size is changed i.e it is necessary for responsive design */
+        /* flex-wrap: wrap-reverse; */
+
+        /* flex-flow: row-reverse wrap; */
+        /* flex-direction and wrap can be done in same line using flex-flow. First flex-direction is set and then flex-wrap is set */
+
+        /* Justify content is for row operation and align is for column operation */
+
+        /* justify-content: right; */
+        /* It aligns the elements in the right */
+
+        /* justify-content:center; */
+        /* It aligns the elements in the center */
+
+        /* justify-content: space-between; */
+        /* The elements are separated by equal distances */
+
+        /* justify-content: space-around; */
+        /* It allocates equal space for each elements in both direction i.e the first box is sepataed by equal distance from the border and from the space occupied by the second box */
+
+        /* justify-content: space-evenly; */
+        /* It separates the elements from each other and from border by equal distance */
+
+        /* The difference between space-evenly and space-around is that evenly maintains equal distance for each elements and for border separation but the around allocaes equal space in both direction and also takes in consideration for the space allocated to other elements so the distances between the elements is greater then the border distance because distance between elements is the sum of distance allocated to both the elements */
+
+        /* align-items: center; */
+        /* It vertically aligns the elements centrally */
+
+        /* align-items: flex-end; */
+        /* It moves the elements to the end  */
+
+        /* align-items: flex-start; */
+        /* It is the default position of the elements */
+
+        /* align-items: stretch; */
+        /* It maintains equal distance vertically when subjected to lower screen i.e when size of screen is changed */
+
+      }
+      .item{
+        background-color:tomato;
+        border: 2px solid brown;
+        margin:10px;
+        padding:3px;
+        width:150px;
+        height:200px;
+
+      }
+
+      /* These are the properties for flex item  */
+      #item1{
+        color:black;
+        /* order:2; */
+        /* higher the oeder, later it shows up in the container */
+
+        /* flex-grow: 3; */
+        /* It increases the size of the item */
+
+        /* flex-shrink: 3; */
+        /* It decreses the size of the item  */
+
+        /* flex-basis: 320px; */
+        /* When flex-direction: is set row, flex-basis: controls width otherwise it controls height  */
+      }
+      
+      #item2{
+        color:black;
+        flex:2 2 100px;
+        /* It represents flex-grow flex-shrink and flex-basis */
+      }
+      
+      #item3{
+        color:black;
+        /* order:4; */
+        /* flex-grow: 4; */
+
+        /* align-self: flex-end;
+        It aligns the element in the end i.e directly below the initial position  */
+        
+        /* align-self: center; */
+        /* It aligns the element in the vertical center  */
+
+        /* align-self: flex-start; */
+        /* It is the default position  */
+      }
+        
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center; color:purple;">This is flexbox tutorial</h1>
+    <div class="container">
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second Box</div>
+        <div class="item" id="item3">Third Box</div>
+        <div class="item" id="item4">Forth Box</div>
+        <div class="item" id="item5">Fifth Box</div>
+        <div class="item" id="item6">Sixth Box</div>
+    </div>
+    
+</body>
+</html>

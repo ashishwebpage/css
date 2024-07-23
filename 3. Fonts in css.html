@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css fonts
+    </title>
+    <!-- This is copied link from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <style>
+        p{
+            /* stack of font helps to execute other fonts if first font is not provided i.e if font 1 is not present then font 2 is executed */
+            font-family:cursive,Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color:blueviolet;
+        }
+    
+    .class1{
+        font-style:italic;
+        /* line-height is the vertical spacing between the fonts or the lines */
+        line-height:5em;
+        font-weight:bold;
+        color:white;
+        background-color:grey;
+        font-size:20px;
+    }
+    .class2{
+    /* This is copied font from google fonts */
+    font-family: 'Anton', sans-serif;
+    color:grey;
+    background-color: black; 
+    font-size:20px;
+}
+    </style>
+</head>
+<body>
+    <h3>Fonts in css</h3>
+    <p>Fonts in css is <span class="class1">very</span> <span class="class2">interesting.</span></p>
+    <span class="class2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sapiente minima eaque dignissimos veniam molestiae saepe ex amet, alias totam.</span><br>
+    <span class="class1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, iusto.</span>
+
+    
+</body>
+</html>

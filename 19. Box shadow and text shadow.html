@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            /* border: 2px solid red; */
+            margin:23px 12px;
+            background-color: burlywood;
+
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: 10px 13px rgb(230, 9, 1); */
+            /* Here in rgb the () last number 0.7 is alpha. It controls the darkness of the color specified. */
+
+            /* box-shadow: -10px -13px grey; */
+
+            /* this is the syntax for box shadow. It appears in right and bottom part of the box. Negative number can also be used. If negative sign is used th shadpw appears im left and top position.  */
+
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* box-shadow: 10px 13px 10px grey; */
+            /* the third size is for blur radius. Box radius increases the lightness or it blurs tthe shadow of the box and the box appears as if it is floating in the screen. 3D effect */
+
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            /* box-shadow: 10px 13px 10px 10px grey; */
+           /* The forth size is for spread-radius. It increases the size of the box shadow and covers the empty spaces in the specified width of the box */
+
+           /* box-shadow: inset 10px 12px 12px 12px brown; */
+           /* Here on using inset, the shadow appears inside the box and the shadow appears in left and top part of the box. If negative sign is used, the shadow apears in right an bottom of the box. inset reverses the default position of the shadow*/
+
+
+           /* Two box-shdows can be applied by simply using comma to separate the two box-shadow effects. If the specified numbers are same for both the shadows then the first shadow takes the priority */
+           /* box-shadow: 12px 10px red, 12px 10px blue; */
+
+        } 
+        .card h2{
+            /* text-shadow is simila to the box shadow.The shadow appears in text insted of box in text shadow. It has similar syntax as that of box-shadow */
+            text-shadow:2px 2px white;
+            /* text-shadow:-2px -2px 3px white; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="car-1">
+            <h2> This is an example of text shadow</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore hic ad culpa, perferendis natus magni soluta nobis nisi libero consectetur dignissimos! Omnis quas iste eveniet temporibus unde, minima fuga, deleniti perferendis veniam non magni!</p>
+        </div>
+        <div class="card" id="car-2">
+            <h2>Card 2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam doloremque soluta est quam necessitatibus velit eligendi dolores quasi vitae ad adipisci corporis reprehenderit consequatur laboriosam, suscipit deleniti ex, cumque expedita temporibus. Nulla, cumque deserunt.</p>
+        </div>
+        <div class="card" id="car-3">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsam exercitationem sint! Totam ipsam hic dolorem. Fugiat deserunt distinctio veniam quia laborum enim assumenda dicta neque amet eos. Aspernatur dolores commodi assumenda molestiae dolorem.</p>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

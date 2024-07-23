@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child psedo selectors</title>
+    <style>
+        input {
+            display: block;
+        }
+
+        .container {
+            display: block;
+            width: 500px;
+            margin: auto;
+        }
+
+        /* input[type=''] is used to apply effect on a specific input type */
+        input[type='text'] {
+            border: 2px solid orange;
+            padding: 44px;
+        }
+
+        a[target] {
+            color: aqua;
+            font-size: 34px;
+        }
+
+        /* a[target=''] is used to apply effect on the specific anchor with target set  */
+        a[target='_self'] {
+            color: rgb(186, 135, 234);
+            font-size: 44px;
+            text-decoration: none;
+        }
+
+        /* element:nth clild() is used to apply effect on the nth child element of a parent element */
+        li:nth-child(5) {
+            color: rgb(0, 99, 103);
+            list-style: none;
+        }
+
+        /* here the program first puts n=0 then it increases its value as needed fron 0 to n */
+        /* li:nth-child(3n+1)
+        {
+            color:blue;
+        } */
+
+        /* to apply effect on odd or even child we can simply write element:nth-child(odd or even) */
+        li:nth-child(even) {
+            background-color: aquamarine;
+        }
+
+        li:nth-child(odd) {
+            background-color: darkslategray;
+        }
+
+        input[type='email'] {
+            border: 2px solid brown;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" class="form-control">
+            <h1><a href="http://google.com" target="_blank">Open google</a></h1>
+            <h1><a href="http://facebook.com" target="_self">Open facebook</a></h1>
+            <!-- target=_self is the defult targer i.e it opens the link in the exixting window  -->
+
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="email" placeholder="Enter your email">
+            <input type="submit" value="Subit now">
+        </form>
+        <ul>
+            <li class="item" id="item1">item1</li>
+            <li class="item" id="item2">item2</li>
+            <li class="item" id="item3">item3</li>
+            <li class="item" id="item4">item4</li>
+            <li class="item" id="item5">item5</li>
+            <li class="item" id="item6">item6</li>
+            <li class="item" id="item7">item7</li>
+            <li class="item" id="item8">item8</li>
+            <li class="item" id="item9">item9</li>
+            <li class="item" id="item10">item10</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

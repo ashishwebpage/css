@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About positions in css</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    /* positions: static(default), absolute, relative, fixed, sticky */
+    .container {
+        border: 3px solid rgb(118, 4, 23);
+        background-color: darkgrey;
+    }
+
+    #box3 {
+        /* position : relative. moves the element w.r.t. its initial position and leaves the gap in its initial position */
+
+        /* position : absolute. moves the element w.r.t its parent i.e container in this case */
+
+        /* position : static. is the default position. it is same as not using position effect */
+
+        /* position : fixed. fixes the position of the element w.r.t the window i.e even after scrolling down the element is seen repeatedly */
+
+        /* position : sticky. fixes the position of the element w.r.t its initial position i.e even after scrolling down its set position doesn't change and it is seen repeatedly.*/
+
+        position: fixed;
+        right: 20px;
+        bottom: 25px;
+
+        /* position:static; */
+
+
+    }
+
+     #box1{
+        position:sticky;
+    top:200px;
+    left:200px;
+    }
+
+     #box2 {
+        position: relative;
+        /* top: 50px; */
+        left: 50px;
+        bottom: 15px;
+    }
+
+    /* #box4 {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }  */
+
+     .box {
+        border: solid 3px black;
+        width: 250px;
+        height: 150px;
+        margin: 2px;
+        display: inline-block;
+
+    }
+
+    .container {
+        height: 4000px; 
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1.This is sticky effect</div>
+        <div class="box" id="box2">2.This is relative effect</div>
+        <div class="box" id="box3">3.This is fixed effect</div>
+        <div class="box" id="box4">4.This is absolute effect</div>
+    </div>
+</body>
+
+</html>

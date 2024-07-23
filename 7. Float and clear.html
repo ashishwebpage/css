@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        box-sizing:border-box;
+        text-align:justify;
+        /* this makes the horizontal line i.e text aligned in the same line  */
+    }
+    
+    body{
+        font-family: 'Lobster', cursive;
+    }
+    .class1{
+        border:5px solid rgb(178 103 210);
+        margin:20px 15px;
+        padding:20px 15px;
+        background-color:rgb(115 134 151);
+    }
+    .class{
+        width:900px;
+        border: solid 5px rgb(126, 11, 214);
+        background-color:rgb(103, 154, 193);
+        margin:50px auto;
+        /* margin:auto aligns the element in the center of the page. */
+    }
+    #id1{
+        float:left;
+        width:48%;
+    }
+    #id2{
+        float:right;
+        width:42%;
+    }
+    #id3{
+        /* float:left; */
+        width:95%;
+        clear:both;
+        /* clear: both; */
+        
+    }
+
+</style>
+<body>
+    <div class="class">
+        <h1 style="text-align:center">This is a colorful page</h1>
+        <div id="id1" class="class1">
+            <h3>class1</h3>
+            <p id="id4" class="classall">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ea amet asperiores quisquam consectetur nihil aliquid dolorum in? Et, dolorem blanditiis. Sunt distinctio fugiat ex cumque, totam harum autem esse. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta eius nemo sunt, dolore, veritatis cum harum quaerat officia excepturi maiores laborum sequi quod rem, atque quasi ipsa vel et itaque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus nam id velit, totam adipisci vel officia obcaecati, cum mollitia, laboriosam doloremque quae perspiciatis quos aut? Magni ducimus voluptatibus ut modi dicta amet, et quisquam laboriosam dolore iste eaque, iure eum </p>
+        </div>
+        <div id="id2" class="class1">
+            <h3>class2</h3>
+            <p id="id5" class="classall">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ea amet asperiores quisquam consectetur nihil aliquid dolorum in? Et, dolorem blanditiis. Sunt distinctio fugiat ex cumque, totam harum autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, dolor ex voluptatem deleniti debitis rem ut neque cumque placeat incidunt, ratione soluta? Non, deserunt suscipit eaque ipsa sequi saepe debitis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita maxime, reiciendis, mollitia rem molestiae accusantium eligendi ex nisi similique id </p>
+        </div>
+        <div id="id3" class="class1">
+            <h3>class3</h3>
+            <p id="id6" class="classall">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ea amet asperiores quisquam consectetur nihil aliquid dolorum in? Et, dolorem blanditiis. Sunt distinctio fugiat ex cumque, totam harum autem esse.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

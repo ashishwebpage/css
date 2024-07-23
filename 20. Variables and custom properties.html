@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and custom properties</title>
+    <style>
+        /* This is how we declare global variables in css. It is important to remmber that although css has variables, it isnot a programming language instead it is a style sheet  */
+        :root{
+            --box-color:rgb(141, 141, 220);
+            --box-color1:rgb(206, 84, 84);
+            --container-color:rgb(250, 253, 37);
+            --maxw:333px;
+        }
+
+        .box{
+            /* This is how we declare local variable in css. It works only within the declared curly braces */
+
+            /* --box-color:blue;
+            --box-color1:rgb(4, 1, 1); */
+
+            /* If the name of the variable is same in global and local variable then the one which is below the other takes he piority */
+
+            width:200px;
+            height:200px;
+
+            /* This is how we use variables in css */
+            background-color: var(--box-color);
+            border:2px solid var(--box-color1);
+
+            margin:2px 9px;
+           
+        }
+        .container{
+            display:flex;
+            background-color: var(--container-color);
+            align-items: center;
+            justify-content: center;
+            max-width:var(--maxw);
+
+            /* Here margin auto is used beacause on decreasing the width, the size of the container decreases due to which the container doesnot appear in the center. So to align the container in the center, margin auto is used */
+            margin:auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>

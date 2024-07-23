@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- this is a doctype document -->
+<!-- control+right slash directly converts or remove text into comment -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--meta helps the search engine this line helps in adjusting the website in user frieldly manner.-->
+  <meta name="description" content="This is description">
+  <meta name="keywords" content="html, webpage, web development">
+  <!-- the keywords help the search engine by providing the information about the content of the webpage.ie when keywords are entered in search engine your website will be loaded -->
+
+  <title>Document</title>
+</head>
+
+<body>
+  <p id="top">Lorem, ipsum dolor.</p><br>
+  <a href="#bottom">Go to bottom</a>
+  <h1>New paragraph</h1>
+  <h2>New paragraph</h2>
+  <h3>New paragraph</h3>
+  <h4>New paragraph</h4>
+  <!-- p*5 gives 5 new paragraph tags in new lines -->
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit illum rem nam illo eligendi! Nemo minima ex
+    recusandae reprehenderit aut molestias magni deleniti laudantium explicabo repellat dolorum illo id libero eligendi
+    vero officia distinctio tempore, molestiae eum ratione ipsam aliquid minus repellendus? Magnam, tenetur enim?</p>
+  <hr>
+  <!-- hr produces line in webpage -->
+  <!-- control+enter helps the user to go to new line without using the mouse -->
+  <h2>This is link</h2>
+  <a href="https://www.google.com" target="_blank">open google</a><br>
+  <a href="https://www.facebook.com" target="_blank">open facebook</a><br>
+  <a href="/two.html" target="_blank">open two.html</a><br><br>
+  <!-- this is internal link i.e it opens a file within the computer -->
+  <h2>This is image.</h2>
+  <strong>This is image:</strong><img src="https:/source.unsplash.com/200x110/?nature,water" alt="error in loading"
+    width="1000" height="600">
+  <h2>This is list.</h2>
+  <ul>List of programming lamguages
+    <li>html</li>
+    <li>java</li>
+    <ul type="circle">
+      <li>english</li>
+      <li>nepali</li>
+    </ul>
+    <li>c</li>
+    <li>c++</li>
+  </ul>
+  <ol>List of programming language
+    <li>java</li>
+    <li>c</li>
+    <ol>
+      <li>english</li>
+      <li>nepali</li>
+    </ol>
+    <li>c++</li>
+    <li>html</li>
+  </ol>
+  <h2>This is table</h2>
+  <table >
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Rollnumebr</th>
+        <th>Adress</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ram</td>
+        <td>One</td>
+        <td>55</td>
+        <td>Kathmandu</td>
+      </tr>
+      <tr>
+        <td>Hari</td>
+        <td>Two</td>
+        <td>54</td>
+        <td>Pokhara</td>
+      </tr>
+      <tr>
+        <td>Shyam</td>
+        <td>Three</td>
+        <td>53</td>
+        <td>Bhaktapur</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Input in html</h2>
+  <form action="backend.php">
+    <div>
+      Enter Name: <input type="text" name="Name" required><br><br>
+    </div>
+    <div>
+      Enter Address: <input type="text" name="Address" required><br><br>
+    </div>
+    <!-- Here, the div tag moves the exceeding tag into a new line as it is a block element -->
+    <div>Enter Email:<input type="email" name="email" id="email" required></div><br><br>
+    <div>Enter your birthday:<input type="date" name="Date"></div><br><br>
+    <div>Enter your code number:<input type="number" name="Number"></div><br><br>
+    <!-- here the number input tag doesn't accept any text but it accepts 23e12 which means 23*10^12 -->
+    <div><label for="check">Do you accept terms and conditions.</label> <input type="checkbox" name="check" id="check"
+        checked></div><br><br>
+    <div>Enter your gender: <input type="radio" name="Gender" id="gender1" checked><label for="gender1">Male</label>
+      <input type="radio" name="Gender" id="gender2"><label for="gender2">Female</label></div><br><br>
+    <div>
+      Write about yourself:<br> <textarea name="text" id="text" cols="30" rows="10"></textarea><br><br>
+    </div>
+    <div>
+      <label for="course">Select your course:</label>
+      <select name="Course" id="course">
+        <option value="html">Html</option>
+        <option value="css">Css</option>
+        <option value="java" selected>Java</option>
+        <option value="c++">C++</option>
+      </select><br><br>
+    </div>
+
+    <div><input type="submit" value="submit now">
+      <input type="reset" name="Reset now">
+    </div><br><br>
+    <!-- selecting a whole bunch of codes and pressing up and down arrow with alt key moves the whole selected code. -->
+  </form>
+  <br>
+  <p id="bottom">Lorem ipsum dolor sit amet.</p>
+  <a href="#top">go to top</a><br><br>
+  <details>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quod inventore doloremque, ab id fugit
+    perferendis. Magni earum dignissimos harum explicabo beatae iusto, voluptates rem saepe molestiae ea iure
+    exercitationem, totam odit placeat veritatis?s
+  </details>
+
+  <!-- span.class -->
+  <span class="class"></span>
+
+  <!-- span.class1.class2.class3 -->
+  <span class="class1 class2 class3"></span>
+
+  <!-- span#class -->
+  <span id="class1"></span>
+
+  <p>This is html</p>
+  <br>
+  <br>
+</body>
+
+</html>

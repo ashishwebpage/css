@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors buttons</title>
+</head>
+<style>
+    .class1{
+         border:5px solid rgb(5, 29, 107);
+         padding:2%;
+         margin:5% auto;
+         width:900px;
+         background-color: rgb(43, 227, 211);
+
+    }
+    a{
+        /* text-decoration removes the underline from the link */
+        text-decoration:none;
+    }
+    #butn1:hover{
+        background-color:azure;
+        border:2px black solid;
+    }
+        a:hover{
+            background-color:rgb(43, 227, 211);
+           color: brown;
+        }
+        a:visited{
+            color:white;
+        }
+        a:active{
+            color:black;
+        }
+
+        /* in case of active and visited, the active needs to be written below visited in order to apply the active efect. */
+
+    .butn{
+        color:black;
+        border:none;
+        padding:1%;
+        margin:auto;
+        background-color: dimgrey;
+        border-radius:5px;
+
+        /* cursor is the mouse. The pointer helps to make the cursor pointed i.e like a hand */
+        cursor:pointer;
+
+        font-size:15px;
+        font-weight:bold;
+        /* font-style: italic; */
+        font-family: 'Times New Roman', Times, serif;
+    }
+</style>
+<body>
+    <div class="class1" id="id1">
+        <h2>This is about buttons and design.</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A facere inventore placeat ipsa aperiam rem error excepturi adipisci sit distinctio. Laudantium ab, consequuntur ea minus delectus possimus eos necessitatibus quis.</p>
+        <a href="https://www.google.com" target="_blank" class="butn">Open google</a>
+        <button class="butn" id="butn1">Read more</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions in css</title>
+    <style>
+        body{
+            background-color: black;
+            color:white;
+        }
+        #box{
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            height:200px;
+            width:200px;
+            /* border:2px solid black; */
+            background-color: red;
+            transition-property:background-color;
+            color:black;
+
+            transition-duration: 3s;
+            /* It is same as animation-duration */
+
+            transition-timing-function: ease-in;
+            /* It is same as animation-timing-function */
+
+            transition-delay: 0s;
+            /* It is same as animation-delay */
+
+        /* SHORTHAND FOR TRANSITION */
+        /* transition: background-color 3s ease-in 0s; */
+
+        transition: all 0.5s ease-in 0s;
+        /* Here all is basically used for transition of alll the effects of a element. All also transitions the effects which are not previusly set in the element for eg: border is not given to the element but the border radius tansitions from 0px to 30px. */
+
+            
+        }
+        #box:hover{
+            background-color:white;
+            height:300px;
+            width:300px;
+            /* Here the height and width should also be metioned in transition or all can be written. If all is not used then the height and width of the box increases but the transition properties are not appilied to it i.e the duration of change is 0s for height and width so it increases suddenly whereas the color changes slowly according to the transition duration set */
+
+            border-radius: 30px;
+            font-size:2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>This is css transition tutorial</h3>
+    <div class="container">
+        <div id="box">
+            This is my box
+        </div>
+    </div>
+</body>
+</html>

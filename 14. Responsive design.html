@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size units</title>
+    <style>
+        /* To use rem unit font, size must be stated in html. Rem means w.r.t the fontsize of html. When the user changes the font size of the website, the rem changes the font of the website acordingly and font size of the elements with unit rem is adjusted  */
+        html {
+            font-size: 25px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #first {
+              color:black;
+            /* font-size: 3em; */
+            /* font size em means with respect to its parent element i.e 3em means 3 times the font size of the container */
+
+            /* padding:3em; */
+            /* when em is used in font size of element then the sizing of padding is done w.r.t the font size i.e 3em means 3*fontsize=3*3*10px */
+
+            /* margin:3em; */
+        }
+
+        #second {
+            color:black;
+            /* font-size: 3rem;
+            margin: 3rem;
+            padding: 3rem; */
+            /* In case of rem when font size is stated, margin and padding donot depend on fontsize i.e margin, padding, font-size=3*html fontsize */
+
+        }
+
+        .container {
+            /* vh and vw is used an element needs the whole view port. vh means viewport height and vw means viewport width. This unit occupies all the viewing space even if the screen size is changed */
+            /* The number assinged in the vh and vw acts as the %view of the screen. If 25 is written then the element occupies 25% of the screen */
+            width:50vw;
+            height:50vh;
+            font-size: 10px;
+            border: 2px solid grey;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="Third">This is third heading</h1>
+    </div>
+
+</body>
+
+</html>
